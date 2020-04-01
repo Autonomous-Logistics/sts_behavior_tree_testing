@@ -1,0 +1,19 @@
+<package format="2">
+  <name>sts_behavior_tree_testing</name>
+  <version>1.0.0</version>
+  <description>Meta package to test the sts_behavior_tree</description>
+
+  <author>Nick Fiege, Sebastian Mueller</author>
+  <maintainer email="nick.fiege@streetscooter.com">Nick Fiege</maintainer>
+  <maintainer email="sebastian.mueller2@streetscooter.com">Sebastian Mueller</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>sts_behavior_tree_server</exec_depend>
+  <exec_depend>sts_behavior_tree_client</exec_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

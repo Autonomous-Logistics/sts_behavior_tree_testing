@@ -1,0 +1,13 @@
+<launch>
+
+  <!-- Launch ROS Package Template Node -->
+  <node pkg="sts_behavior_tree_server" type="sts_behavior_tree_server" name="sts_behavior_tree_server_node" output="screen" >
+    <rosparam command="load" file="$(find sts_behavior_tree_server)/config/default.yaml" />
+    <rosparam param="tree_graphml_path" subst_value="True">"$(find sts_behavior_tree_server)/config/tree.graphml"</rosparam>
+  </node>
+
+<node pkg="sts_bt_visualisation" type="sts_bt_visualisation_node" name="sts_bt_visualisation_node" output="screen">
+    <rosparam command="load" file="$(find sts_bt_visualisation)/config/default.yaml" />
+  </node>
+
+</launch>

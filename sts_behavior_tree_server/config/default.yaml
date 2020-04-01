@@ -1,0 +1,5 @@
+tree_tick_period: 300       #ms
+tree_tick_debug_delay: 50   #ms
+
+tree_generate_feedback: false
+#tree_graphml_path: "" ### should be written via launchfile to avoid absolute path

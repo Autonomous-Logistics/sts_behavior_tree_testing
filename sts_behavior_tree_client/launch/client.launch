@@ -1,0 +1,8 @@
+<launch>
+
+  <!-- Launch ROS Package Template Node -->
+  <node pkg="sts_behavior_tree_client" type="sts_behavior_tree_client" name="sts_behavior_tree_client_node" output="screen" >
+    <rosparam command="load" file="$(find sts_behavior_tree_client)/config/default.yaml" />
+  </node>
+
+</launch>
